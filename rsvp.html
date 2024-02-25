@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="128x128" href="pictures/heart icon.png">
+  <title>The Future Marins</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <div onclick="closeMenu()" class="main-header">The Future Marins</div>
+    <nav class="navigation-bar">
+      <img class="logo" onclick="toggleMenu()" src="pictures/heart icon.png">
+      <div id="hideMenu">
+        <div  id="menuList">
+          <ul id="showMenu" class="showMenu">
+            <a href="index.html"><li>Home</li></a>
+            <span> | </span>
+            <a href="brideandgroom.html"><li>Bride and Groom</li></a>
+            <span> | </span>
+            <a href="weddingparty.html"><li>Wedding Party</li></a>
+            <span> | </span>
+            <a href="schedule.html"><li>Schedule</li></a>
+            <span> | </span>
+            <a href="accommodations.html"><li>Accommodations</li></a>
+            <span> | </span>
+            <a href="registry.html"><li>Registry</li></a>
+            <span> | </span>
+            <a href="rsvp.html"><li>RSVP</li></a>
+            <span> | </span>
+            <a href="index.html"><li>Gallery</li></a>
+            <span> | </span>
+            <a href="FAQ.html"><li>FAQs</li></a>
+          </ul>
+        </div>      
+      </div>   
+    </nav>
+</header>
+<div onclick="closeMenu()" class="eucalyptus_horizont_center">
+  <img class="eucalyptus_horizont" src="pictures/eucalyptus_horizont.jpg">
+</div>
+<main onclick="closeMenu()" class="container content-section">
+ <div>
+   <h2>Please RSVP by August 1st, 2024. After RSVPing, click the button below to fill out a brief survey to help enhance your experience as a guest. Thank you!</h2>
+   <div class="registry">
+    <div class="button-content">
+      <p>Wedding Survey</p>
+    </div>
+   </div>
+ </div>
+</main>
+<section onclick="closeMenu()">
+  <div class="date">
+    <h2>Save the Date:</h2>
+    <h2 >October 26th, 2024</h2>
+  </div>
+  <div class="countdown">
+    <div data-aos="zoom-out-up" class="countdown-content">
+      <p id="days">00</p>
+      <h2>DAYS</h2>
+    </div>
+    <div data-aos="zoom-out-up" data-aos-delay="200" class="countdown-content">
+      <p id="hours">00</p>
+      <h2>HOURS</h2>
+    </div>
+    <div data-aos="zoom-out-up" data-aos-delay="400" class="countdown-content">
+      <p id="minutes">00</p>
+      <h2>MINUTES</h2>
+    </div>
+    <div data-aos="zoom-out-up" data-aos-delay="600" class="countdown-content">
+      <p id="seconds">00</p>
+      <h2>SECONDS</h2>
+    </div>
+  </div>
+</section> 
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ <footer>
+  <div class="credit"><p>Created By Sam Marin; Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p></div>
+</footer>
+</body>
