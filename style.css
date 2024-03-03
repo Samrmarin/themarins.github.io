@@ -115,7 +115,6 @@ html, body {
 
 .header-div :nth-child(2) {
     font-size: .5em;
-    font-family: Libre Baskerville;
 }
 
 .eucalyptus {
@@ -489,7 +488,9 @@ html, body {
         margin-top: -75px;
     }
 
- 
+    .header-div :nth-child(2) {
+        font-size: 0.75em;
+    }
 
 
     .first_eucalyptus {
@@ -510,8 +511,6 @@ html, body {
     }
 
 
-
-
     .eucalyptus_horizont {
         width: auto;
         height: 175px;
@@ -527,6 +526,17 @@ html, body {
         font-size: 1.25em;
         margin-top: 30px;
     }
+
+
+
+
+
+    /*wedding party page*/
+
+
+
+
+
 
     
     .timer {
