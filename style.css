@@ -236,6 +236,10 @@ html, body {
     
 }
 
+.button-content a {
+    text-decoration: none;
+}
+
 .bandg_list {
     text-align: center;
     list-style-type: none;
