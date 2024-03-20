@@ -276,8 +276,12 @@ html, body {
     animation: fadeInLeft 1.2s both;
 }
 
-.animation-padding {
+.animation-padding-first {
     padding-top: 100px;
+}
+
+.animation-padding {
+    padding-top: 200px;
 }
 
 @-webkit-keyframes fadeInLeft {
