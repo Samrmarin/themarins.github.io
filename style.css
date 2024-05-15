@@ -234,7 +234,7 @@ html, body {
 
 .peoples-name {
     font-family: "caligraphy";
-    font-size: 5em;
+    font-size: 4em;
     
 }
 
@@ -263,7 +263,7 @@ html, body {
 }
 
 .sub-header {
-    font-size: 5em;
+    font-size: 4.2em;
 }
 
 .caligraphy-questions {
@@ -515,26 +515,26 @@ html, body {
 
         width: auto;
         margin-top: 55px;
-        height: 200px; 
+        height: 190px; 
     }
 
 
     .second_eucalyptus {
 
         width: auto;
-        height: 200px;
+        height: 190px;
         margin-top: 55px;
         margin-left: 150px;
     }
 
     .page-title {
-        font-size: 2.45em;
+        font-size: 2.0em;
     }
 
 
     .eucalyptus_horizont {
         width: auto;
-        height: 175px;
+        height: 165px;
     }
 
 
@@ -578,8 +578,12 @@ html, body {
     }
 
     .countdown-content {
-        margin: auto;
+        margin: 0;
 
+    }
+
+    .countdown-content p {
+        font-size: 60px;
     }
 
     #minutes {
