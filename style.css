@@ -579,11 +579,10 @@ html, body {
 
     .countdown-content {
         margin: 0;
-
     }
 
     .countdown-content p {
-        font-size: 60px;
+        font-size: 55px;
     }
 
     #minutes {
