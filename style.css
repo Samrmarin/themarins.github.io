@@ -577,6 +577,10 @@ html, body {
         justify-content: center;
     }
 
+    .countdown {
+        margin-top: 150px;
+    }
+
     .countdown-content {
         margin: 0;
     }
