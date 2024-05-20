@@ -11,7 +11,7 @@
 *, *::after, *::before {
     box-sizing: border-box;
     font-family: Poppins;
-    color: white;   
+    color: #174040;   
 }
 
 html, body {
@@ -26,6 +26,8 @@ html, body {
     font-size: 7em;
     padding-top: 25px;
     padding-bottom: 25px;
+    color: white;
+    text-shadow: 1px 1px 5px #bbbbbf;
 }
 
 .header-line {
@@ -36,7 +38,6 @@ html, body {
 }
 
 .navigation-bar {
-    padding-top: 0.0159px;
     text-align: center;
     font-size: 1.00em;
     font-weight: bold;
@@ -50,17 +51,18 @@ html, body {
 }
 
 .navigation-bar li {
-    display: inline;
-    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 15px;
 }
+
  
 .navigation-bar li:hover  {
-    background-color: #9FB6B9;
+    background-color: #9FB6B970;
     cursor: pointer;
-    color: white;
     transition: 0.3s ease-out;
-    border-radius: 0 0 25px 25px;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navigation-bar a {
@@ -68,27 +70,8 @@ html, body {
     width: 20px;
     height: 20px;
     color: black;
+    margin: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .container {
@@ -156,8 +139,10 @@ html, body {
 
 .date {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 125px;
+    font-size: 1.5em;
 }
+
 
 .countdown {
     display: flex;
@@ -178,14 +163,15 @@ html, body {
     margin-top: 10px;
     justify-content: center;
     font-size: 75px;
-    color: white;
+    color: #174040;
 }
 
 .countdown-content h2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    color: white;
+    color: #174040;
+    
 }
 
 .registry {
@@ -199,20 +185,22 @@ html, body {
 }
 
 .button-content {
-    background-color: #9FB6B9;
+    background-color: #174040;
     cursor: pointer;
     color: white;
-    margin-top:75px;
-    width: 50%;
+    margin-top: 75px;
+    min-width: max-content;
     height: 70%;
     transition: 0.3s ease-out;
     border-radius: 25px;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px 45px;
 }
 
 .button-content:hover {
     background-color: #7b9598;
 }
+
 
 .button-content p {
     display: flex;
@@ -220,6 +208,7 @@ html, body {
     align-items: center;
     font-size: 30px;
     color: white;
+    margin: 0;
 }
 
 .page-title {
@@ -411,11 +400,11 @@ html, body {
 
 
     :root {
-        --bar-width: 50px;
-        --bar-height: 7px;
-        --hamburger-gap: 6px;
-        --foreground: white;
-        --background: #333;
+        --bar-width: 32px;
+        --bar-height: 4px;
+        --hamburger-gap: 4px;
+        --foreground: #174040;
+        --background: #174040;
         --hamburger-margin: 10px;
         --animation-timing: 200ms ease-in-out;
         --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) *2);
@@ -445,6 +434,7 @@ html, body {
         left: var(--hamburger-margin);
         z-index: 3;
         cursor: pointer;
+        padding: 8px 4px;
     }
     
     .hamburger-menu input {
@@ -459,12 +449,14 @@ html, body {
         rotate: 45deg;
         width: var(--x-width);
         translate: 0 calc(var(--bar-height) / -2);
+        background-color: white;
     }
     
     .hamburger-menu:has(input:checked)::after {
         rotate: -45deg;
         width: var(--x-width);
         translate: 0 calc(var(--bar-height) / 2);
+        background-color: white;
     }
     
     .hamburger-menu input:checked {
@@ -475,7 +467,7 @@ html, body {
     .sidebar {
         transition: translate var(--animation-timing);
         translate: -100%;
-        padding: 0.5rem 1rem;
+        padding: 1.75rem 1rem;
         padding-top: 5px;
         background-color: var(--background);
         color: var(--background);
@@ -484,12 +476,17 @@ html, body {
         font-size: 1em;
         text-align: center;
         border-radius: 0 0 10px 10px;
-
     }
 
     .sidebar div {
-        margin-top: 10px;
+        margin-top: 17px;
+        color: white;
     }
+
+    .sidebar a {
+        color: white;
+    }
+
 
     .hamburger-menu:has(input:checked) + .sidebar {
         translate: 0;
@@ -578,7 +575,7 @@ html, body {
     }
 
     .countdown {
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
     .countdown-content {
@@ -602,4 +599,8 @@ html, body {
         margin-top: 250px;
     }
 
+    .date {
+        font-size: 1.3em;
+    }
+    
 }

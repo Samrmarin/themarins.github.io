@@ -39,16 +39,7 @@ const countdown = () => {
 
 setInterval(countdown, 1000)
 
-function toggleMenu(){
-    menuList.classList.add("menu-container");
-    showMenu.classList.remove("showMenu");
-    hideMenu.classList.remove("close-menu");
-}
 
-
-function closeMenu(){
-    hideMenu.classList.add("close-menu");
-}
 
 
 
