@@ -174,6 +174,63 @@ html, body {
     
 }
 
+
+.portrait-photos-1 {
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    height: 350px;
+    margin: 50px 20px;
+    border-radius: 25px;
+}
+
+.portrait-photos-2 {
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    height: 350px;
+    margin: 50px 20px;
+    border-radius: 25px;
+}
+
+.portrait-photos-3 {
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    height: 350px;
+    margin: 50px 20px;
+    border-radius: 25px;
+}
+
+
+.landscape-photos-1 {
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    height: 300px;
+    border-radius: 25px;
+    margin: 50px 20px;
+}
+
+.landscape-photos-2 {
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    height: 275px;
+    border-radius: 25px;
+    margin: 50px 20px;
+}
+
+.landscape-photos-3 {
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    height: 275px;
+    border-radius: 25px;
+    margin: 50px 20px;
+}
+
+
 .registry {
     display: flex;
     justify-content: center;
@@ -281,6 +338,136 @@ html, body {
 
 .animation-padding {
     padding-top: 200px;
+}
+
+.bride-and-groom-content {
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 800px;
+    height: 534px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 534px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 534px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #C4D5D5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: #C4D5D5;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
+
+/*automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 494px;
+
+}
+
+.navigation-auto div {
+    border: 2px solid #C4D5D5;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn-1 {
+    background-color: #ccc;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn-2 {
+    background-color: #ccc;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn-3 {
+    background-color: #ccc;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn-4 {
+    background-color: #ccc;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn-5 {
+    background-color: #ccc;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn-6 {
+    background-color: #ccc;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -545,9 +732,64 @@ html, body {
         margin-top: 30px;
     }
 
+    .portrait-photos-1 {
+        height: 350px
+    }
 
+    .portrait-photos-2 {
+        height: 260px
+    }
 
+    .portrait-photos-3 {
+        height: 350px
+    }
 
+    .landscape-photos-1 {
+        height: 200px
+    }
+
+    .landscape-photos-2 {
+        height: 200px
+    }
+
+    .landscape-photos-3 {
+        height: 200px
+    }
+
+    .bride-and-groom-content {
+        margin: 0;
+        padding: 0;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider {
+        width: 350px;
+        height: 216.125px;
+    }
+
+    .slide img {
+        width: 350px;
+        height: 216.125px;
+    }
+
+    .navigation-manual {
+        position: absolute;
+        width: 350px;
+        margin-top: -350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto {
+        position: absolute;
+        width: 350px;
+        margin-top: 184px;
+        display: flex;
+        justify-content: center;
+    }
 
     /*wedding party page*/
 
