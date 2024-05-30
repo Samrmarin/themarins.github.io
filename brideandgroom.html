@@ -144,7 +144,17 @@
   <footer>
     <div class="credit"><p>Developed By Sam Marin</p></div>
   </footer>
-  <script src="/script.js"></script>
+  <script>
+  var counter = 1;
+  setInterval(function(){
+      document.getElementById('radio'+counter).checked = true;
+      counter++;
+  
+      if(counter>6) {
+          counter = 1;
+      }
+  },5250)
+  </script>
   <script src="app.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
