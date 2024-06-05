@@ -348,7 +348,7 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-
+/*
 .slider {
     width: 800px;
     height: 534px;
@@ -425,7 +425,7 @@ html, body {
 }
 
 /*automatic navigation*/
-
+/*
 .navigation-auto {
     position: absolute;
     display: flex;
@@ -468,6 +468,35 @@ html, body {
 
 #radio6:checked ~ .navigation-auto .auto-btn-6 {
     background-color: #ccc;
+}
+*/
+
+.container-pics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.dream img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -565,10 +594,6 @@ html, body {
     }
 }
 
-.logo {
-    display: none;
-    
-}
 
 .credit {
     margin-top: 200px;
@@ -802,6 +827,14 @@ html, body {
      }
 
 
+     /*pics*/
+
+     .box {
+        flex-direction: column;
+     }
+     .dream {
+        width: 100%;
+     }
 
      /*faq page*/
 
